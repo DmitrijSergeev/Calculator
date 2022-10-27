@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box auto;
+}
+.container{
+    position: relative;
+    display: inline-block;
+    width: 1500px;
+    height: 600px;
+    background-color: antiquewhite;
+}
+.common{
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+    margin: 20px;
+    padding: 40px 45px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.calc{
+    position: absolute;
+    display: inline-block;
+    width: 800px;
+    height: 400px;
+    margin: 100px 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.operation{
+    position: absolute;
+    display: inline-block;
+    width: 700px;
+    height: 150px;
+    margin: 20px 50px;
+    border: 2px solid black;
+    padding: 10px;
+}
+.numbers{
+    position: absolute;
+    display: inline-block;
+    width: 700px;
+    height: 150px;
+    margin: 210px 50px;
+    border: 2px solid black;
+    padding: 10px;
+}
+p{
+    position: absolute;
+    display: inline-block;
+}
+.num1{
+    margin-left: 100px;
+}
+.num2{
+    margin-left: 300px;
+}
+.pow{
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+}
+.share{
+    position: absolute;
+    display: inline-block;
+    margin-left: 200px;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+}
+.plus{
+    position: absolute;
+    display: inline-block;
+    margin-left: 400px;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+}
+.minus{
+    position: absolute;
+    display: inline-block;
+    margin-left: 580px;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+}
+.first{
+    position: absolute;
+    display: inline-block;
+    margin: 40px -70px;
+    background-color: white;
+    border: 3px solid;
+    padding: 0px;
+    width: 100px;
+    height: 30px;
+}
+.second{
+    position: absolute;
+    display: inline-block;
+    margin: 40px -80px;
+    background-color: white;
+    border: 3px solid;
+    padding: 0px;
+    width: 100px;
+    height: 30px;
+}
