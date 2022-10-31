@@ -4,48 +4,37 @@ document.addEventListener("DOMContentLoaded", ()=>{
         devide = document.querySelector('.share'),
         summ = document.querySelector('.plus'),
         left = document.querySelector('.minus');
+    let input1 = document.querySelector('.first'),
+        input2 = document.querySelector('.second');
+
+        function getNumber1 (){
+            return Number(input1.value);
+        }
+        function getNumber2 (){
+            return Number(input2.value);
+        }
 
         function onButtonMultiply (){
-            let input1 = document.querySelector('.first'),
-                input2 = document.querySelector('.second');
 
-                let number1 = Number(input1.value);
-                let number2 = Number(input2.value);
-
-                let sum = number1*number2;
+                let sum = getNumber1()*getNumber2();
 
                 alert(sum);
         };
         function onButtonDevide (){
-            let input1 = document.querySelector('.first'),
-                input2 = document.querySelector('.second');
-
-                let number1 = Number(input1.value);
-                let number2 = Number(input2.value);
-
-                let sum = number1/number2;
+            
+                let sum = getNumber1()/getNumber2();
 
                 alert(sum);
         };
         function onButtonSumm (){
-            let input1 = document.querySelector('.first'),
-                input2 = document.querySelector('.second');
 
-                let number1 = Number(input1.value);
-                let number2 = Number(input2.value);
-
-                let sum = number1+number2;
+                let sum = getNumber1()+getNumber2();
 
                 alert(sum);
         };
         function onButtonSubstract (){
-            let input1 = document.querySelector('.first'),
-                input2 = document.querySelector('.second');
 
-                let number1 = Number(input1.value);
-                let number2 = Number(input2.value);
-
-                let sum = number1-number2;
+                let sum = getNumber1()-getNumber2();
 
                 alert(sum);
         };
