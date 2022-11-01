@@ -107,7 +107,17 @@ p{
 .second{
     position: absolute;
     display: inline-block;
-    margin: 40px -80px;
+    margin: 40px -90px;
+    background-color: white;
+    border: 3px solid;
+    padding: 0px;
+    width: 100px;
+    height: 30px;
+}
+.answer{
+    position: absolute;
+    display: inline-block;
+    margin: 40px 100px;
     background-color: white;
     border: 3px solid;
     padding: 0px;

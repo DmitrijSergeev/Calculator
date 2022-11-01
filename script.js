@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
         summ = document.querySelector('.plus'),
         left = document.querySelector('.minus');
     let input1 = document.querySelector('.first'),
-        input2 = document.querySelector('.second');
+        input2 = document.querySelector('.second'),
+        input3 = document.querySelector('input.answer');
 
         function getNumber1 (){
             return Number(input1.value);
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         function onButtonMultiply (){
 
                 let sum = getNumber1()*getNumber2();
-
+                
                 alert(sum);
         };
         function onButtonDevide (){
