@@ -31,22 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert(result);
         }
 
-        function onButtonMultiply() {
-                makeOperation('*');
-        }
-        function onButtonDevide() {
-                makeOperation('/');
-        }
-        function onButtonSumm() {
-                makeOperation('+');
-        }
-        function onButtonSubstract() {
-                makeOperation('-');
+        function onOperationButtonClick(eventObject){
+                let clickedElement = eventObject.currentTarget;
+                let operation = clickedElement.innerHTML;
+                makeOperation(operation);
         }
 
-        multiPly.addEventListener('click', onButtonMultiply);
-        devide.addEventListener('click', onButtonDevide);
-        summ.addEventListener('click', onButtonSumm);
-        left.addEventListener('click', onButtonSubstract);
+        multiPly.addEventListener('click', onOperationButtonClick);
+        devide.addEventListener('click', onOperationButtonClick);
+        summ.addEventListener('click', onOperationButtonClick);
+        left.addEventListener('click', onOperationButtonClick);
 
 })
