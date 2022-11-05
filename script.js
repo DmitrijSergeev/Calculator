@@ -9,21 +9,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 input3 = document.querySelector('input.answer'),
                 result;
 
-        function getNumber1() {
-                return Number(input1.value);
-        }
-        function getNumber2() {
-                return Number(input2.value);
-        }
         function makeOperation(operationCode) {
+
+                let number1 = Number(input1.value);
+                let number2 = Number(input2.value);
+
                 if (operationCode === '*') {
-                        result = getNumber1() * getNumber2();
+                        result = number1 * number2;
+
                 } else if (operationCode === '/') {
-                        result = getNumber1() / getNumber2();
+                        result = number1 / number2;
+
                 } else if ((operationCode === '+')) {
-                        result = getNumber1() + getNumber2();
+                        result = number1 + number2;
+
                 } else if ((operationCode === '-')) {
-                        result = getNumber1() - getNumber2();
+                        result = number1 - number2;
                 } else {
                         alert('Operation is unknown');
                 }
